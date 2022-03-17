@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <div id="flexbox">
+      <div class="container">
+        <h1>Video Player</h1>
+        <h2 id="video_name"></h2>
+        <video id="video_display" loop controls>
+          <source id="video_source" src="" type="video/mp4" />
+        </video>
+        <div class="div_botoes">
+          <button
+            class="botao botao_pequeno"
+            id="previous_button"
+            onclick="video_anterior()"
+          >
+            <img class="mediaIcon" src="./assets/images/previous_button.png" />
+          </button>
+          <button class="botao botao_pequeno" onclick="play_musicvideo()">
+            <img class="mediaIcon" src="./assets/images/play_icon.png" />
+          </button>
+          <button
+            class="botao botao_pequeno"
+            id="next_button"
+            onclick="proximo_video()"
+          >
+            <img class="mediaIcon" src="./assets/images/next_button.png" />
+          </button>
+        </div>
+      </div>
+      <div id="playlist_div">
+        <ul id="playlist_ul"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

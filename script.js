@@ -56,7 +56,6 @@ function execute_play_video() {
 /* Próximo vídeo */
 
 function proximo_video() {
-  console.log("teste proximo video");
   if (current_video == videos.length) {
     next_button.disabled = true;
   } else {
@@ -69,14 +68,12 @@ function proximo_video() {
 /* Vídeo anterior */
 
 function video_anterior() {
-  console.log("teste video anterior");
   if (current_video == 0) {
     previous_button.disabled = true;
   } else {
     previous_button.disabled = false;
     current_video--;
     execute_play_video();
-    console.log(current_video);
   }
 }
 
